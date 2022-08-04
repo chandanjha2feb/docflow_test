@@ -1,0 +1,9 @@
+SELECT documents.id, sections.id, comments.message FROM documents
+    INNER JOIN sections ON documents.id = sections.document_id
+    INNER JOIN comments ON sections.id = comments.sections_id;
+
+System Depencies:
+database: MySql
+Payment gateway: Stripe
+Web server: Apache
+Application server: phusion
